@@ -211,6 +211,7 @@
                                                                                 </section>
                     </article>
                 </div>
+                <div class="post-wrap">
                 <% if (typeof commentSetting !== 'undefined' && commentSetting.showComment) { %>
                     <% if (commentSetting.commentPlatform === 'gitalk') { %>
                         <%- include('./include/gitalk') %>
@@ -221,6 +222,7 @@
                                             <% if (site.customConfig.Valine==='on') { %>
                                                 <%- include('./include/valine') %>
                                                     <% } %>
+                                                </div>
             </div>
     </div>
     </div>
